@@ -1,0 +1,188 @@
+%------------------------
+% AI-Optimized Resume Template
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{0.8in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-1pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+% Commands
+\newcommand{\email}[1]{\faEnvelope\ \href{mailto:#1}{#1}}
+\newcommand{\linkedin}[2][]{\faLinkedin\ \href{#2}{#1}}
+\newcommand{\github}[2][]{\faGithub\ \href{#2}{#1}}
+\newcommand{\website}[2][]{\faGlobe\ \href{#2}{#1}}
+\newcommand{\name}[1]{ \centerline{\Huge\scshape\bfseries{#1}} }
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeCompanyHeader}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeJobTitle}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small\bfseries#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\project}[1]{
+  \vspace{-1pt}\item
+  \textbf{#1}\vspace{-4pt}
+}
+
+\newcommand{\resumeBullet}[1]{\item\small{#1}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\newcommand{\resumeBulletStart}{
+  \begin{itemize}[leftmargin=*, itemsep=3pt, topsep=3pt]
+}
+\newcommand{\resumeBulletEnd}{\end{itemize}}
+
+\begin{document}
+
+% HEADER
+\name{Lucas Hope}
+\begin{center}
+    \email{lucasfhope@icloud.com} \textperiodcentered\
+    \website[lucashope.xyz]{https://lucashope.xyz}
+    \textperiodcentered\
+    \linkedin[lucashope]{https://www.linkedin.com/in/lucashope/}
+    \textperiodcentered\
+    \github[lucash0pe]{https://github.com/lucash0pe}
+\end{center}
+
+% EDUCATION
+\section{Education}
+\resumeItemListStart
+  \resumeSubheading
+    {Stevens Institute of Technology}{Hoboken, NJ}
+    {BS in Computer Science (GPA: 3.7)}{September 2021 -- December 2024}
+\resumeItemListEnd
+
+% EXPERIENCE
+\section{Experience}
+\resumeItemListStart
+
+  \resumeCompanyHeader{Jersey Mike's Subs}{Wall, NJ}
+  \resumeJobTitle{AI Application Engineer}{May 2025 -- Present}
+  \resumeBulletStart
+    \resumeBullet{
+      Built a natural language sales analytics system that converts business questions into validated, schema-driven execution pipelines using structured LLM outputs.
+    }
+    \resumeBullet{
+      Implemented a deterministic query execution framework supporting filtering, grouping, aggregation, and sorting across the dataset, with strict validation of dimensions and metrics.
+    }
+    \resumeBullet{
+      Rapidly prototyped and presented MVP analytics tools to business stakeholders, iterating on feedback to align technical capabilities with business needs.
+    }
+  \resumeBulletEnd
+
+  \resumeJobTitle{Data Engineering Intern}{Summer 2023, 2024}
+  \resumeBulletStart
+    \resumeBullet{
+      Engineered Playwright-based automation to collect competitor pricing across key markets, implementing strategies to navigate anti-bot protections and eliminating 4 days of manual data collection per month.
+    }
+    \resumeBullet{
+      Designed data ingestion workflows to normalize and store scraped pricing data in PostgreSQL for downstream analytics.
+    }
+    \resumeBullet{
+      Prototyped LLM-assisted insight generation workflows to analyze pricing trends and support competitive strategy reporting.
+    }
+  \resumeBulletEnd
+
+\resumeItemListEnd
+
+% PROJECTS
+\section{Projects}
+\resumeItemListStart
+
+  \project{Web3 Security Portfolio}
+  \resumeBulletStart
+    \resumeBullet{
+      Analyzed smart contract vulnerabilities including reentrancy, flash loan exploits, and access control flaws across DeFi protocols.
+    }
+    \resumeBullet{
+      Produced detailed exploit walkthroughs and mitigation strategies based on competitive audits and security challenges.
+    }
+  \resumeBulletEnd
+
+  \project{ExtendedSQL}
+  \resumeBulletStart
+    \resumeBullet{
+      Designed and implemented a SQL-like query engine to support complex aggregation across dynamic grouping dimensions, including parsing, execution planning, and evaluation logic.
+    }
+  \resumeBulletEnd
+
+\resumeItemListEnd
+
+% SKILLS
+\section{Skills and Technologies}
+\resumeItemListStart
+  \item\small{
+    \textbf{Programming Languages:} Python, SQL, TypeScript, JavaScript, Solidity, Rust, Go \\
+    \textbf{Frameworks \& Tools:} FastAPI, Flask, React, LangGraph, Pydantic, Foundry, OpenWebUI, LaTeX, RAG Pipelines \\
+    \textbf{Data \& Infrastructure:} PostgreSQL, AWS, Docker, Git, Linux, Vector Databases
+  }
+\resumeItemListEnd
+
+% LEADERSHIP
+\section{Leadership}
+\resumeItemListStart
+  \resumeSubheading
+    {Alpha Sigma Phi – Alpha Tau Chapter}{}{President}{}
+  \resumeBulletStart
+    \resumeBullet{
+      Led a 40-member organization and directed a 10-officer executive board.
+    }
+    \resumeBullet{
+      Managed chapter operations, strategic planning, and coordination with university administration and national leadership.
+    }
+  \resumeBulletEnd
+\resumeItemListEnd
+
+\end{document}
+
